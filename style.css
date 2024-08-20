@@ -87,7 +87,7 @@ nav ul li a{
     animation-delay: 1.5s;
 }
 .anim{
-    opacity: 0
+    opacity: 0;
     transform: translateY(30px);
     animation: moveup 0.5s linear forwards;
 
@@ -108,7 +108,7 @@ nav ul li a{
     box-sizing: border-boxs;
 }
 .about{
-    width: 100%
+    width: 100%;
     padding: 100px 0px;
 }
 
