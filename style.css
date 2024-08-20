@@ -130,7 +130,7 @@ nav ul li a{
     align-items: center;
     justify-content: space-around;
     min-height: 100vh;
-    background-image: url(images/beiege.png);
+    background-image: url(beiege.png);
     background-position: center;
     background-size:cover;
     padding: 70px 10%;
