@@ -253,13 +253,13 @@ nav a.active{
          }
         }
 
-        @media (max-width 1000px){
+        @media (max-width 900px){
         .home{
             gap: 4rem;
 
         }
     }
-        @media (max-width 995px){
+        @media (max-width 990px){
        .home{
         flex-direction: column;
         margin: 5rem 4rem;
@@ -352,11 +352,11 @@ nav a.active{
         ;
     }
     .container img{
-        width: 20%;
-        height: 100%;
-        object-fit: cover;
+        width: 15%;
+        height: 90%;
+        object-fit:cover;
         border-radius: 10px;
-        border: 2px solid rgba(red, green, blue, alpha);
+        border: 10px solid rgba(red, green, blue, alpha);
         transition:all ease-in-out 0.5s;
     }
     .container img:hover{
@@ -365,7 +365,7 @@ nav a.active{
     
     .skill-text h2{
       
-        font-size: 40px;
+        font-size: 30px;
         text-align:left;
         text-decoration: underline;
         padding-top: 50px ;
@@ -389,7 +389,7 @@ nav a.active{
     }.dance{
 
         background-position: 10%;
-        margin: 30px 20px 30px 180px;
+        margin: 0px 20px 10px 180px;
         height: 200px;
         justify-content: center;
         gap: 20px;
@@ -404,47 +404,100 @@ nav a.active{
 
     }.dance-text h4{
         width: auto;
-        height: 30px;
+        height: 10px;
+        margin-top: 0px 5px 10px 5px;
         justify-self: unset;
         text-align: center;
         padding: 50px;;
         font-size: 20px;
+        padding-top: 10px;
 
     }
     .dance img:hover{
-        width: 35%;
+        width: 40%;
 
-
-    }.projects {
-        margin-top: 25px;
-        padding: 100 0px;
-        background-color: #f5f5eb;
-        border: 200px;
-
-    }.text-containers a{
-        max-width: 60%; 
-        margin-left: 10px; 
-        display: inline-flex;
 
     }
+    .education{
+       
+        display: flex;
+        justify-content: center;
+        background-color: #3d1e0f;
+        margin-top: 25px;
+        padding: 100 0px;
+        background:local;
+        background-color: #f5f5eb;
+        border: 1000px;
 
-    .projects a{
-        list-style: none;
-        padding: 0;
-        text-align: center; /* Center the navigation links */
-      }
-      .projects h4{
+    }.third-container{
+        position: relative;
+        width:  1000px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        pad: 30px;
+        margin-top: 12%;
+        margin-bottom: 6%;
+        gap: 10%;
+
+    }.education.card{
+        width: 300px;
+        position: relative;
+        height: 300px;
+        background-color: #d9bf9e;
+        margin: 30px 10px;
+        padding: 10px 15px;
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0.5px 10px #987554;
+        transition: 0.3s ease-in-out;
+        margin-top:10px;
+
+    }.education .card .imgBx{
+        position: center;
+        width: 220px;
+        height: 220px;
+        top: -10px;
+        left: 10px;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 1.2);
+
+    }
+    .education .card .imgBx img
+    {
+        max-width: 100%;
+        border-radius: 10px;
+
+    }
+    .imgBx:hover img{
+        transform: scale(1.1);
+
+    }
+    .education h2{
         font-size: 20px;
-        text-align: center;
-      }
-      .projects a{
-        display: inline-block;
-        margin: 0 1rem;
-      }
-      
-      .projects  a {
-        color: #3d1e0f; /* Text color */
-        background-color: #d9bf9e; /* Light background color */
+        text-align:left;
+        text-decoration:none;
+        padding-top: 50px ;
+        padding-right: 50px;
+
+    } .education p{
+        font-size: 15px;
+    } .education h3{
+        font-size: 30px;
+        text-align:left;
+        text-decoration: underline;
+        padding-top: 50px ;
+        padding-right: 50px;
+        
+
+    }.projects{
+        margin-top: 25px;
+        background-color: #f5f5eb;
+        border: 100px;
+
+    }
+    .projects a {
+        color: #333; /* Text color */
+        background-color: #f4f4f4; /* Light background color */
         padding: 0.5rem 1.5rem;
         border-radius: 25px; /* Rounded button style */
         text-decoration: none;
@@ -454,10 +507,36 @@ nav a.active{
       }
       
       .projects a:hover {
-        background-color: #987554; /* Darker background on hover */
-        color: #3d1e0f; /* White text on hover */
+        background-color: #a0a0a0; /* Darker background on hover */
+        color: #fff; /* White text on hover */
         transform: scale(1.1); /* Slight zoom on hover */
+
+      }.projects h4{
+        font-size: 30px;
+        text-align:left;
+        text-decoration: underline;
+        padding-top: 50px ;
+        padding-right: 50px;
+      }
+      footer {
+        background-color: #987554;
+        color: #fff;
+        text-align: center;
+        padding: 1rem 0;
       }
       
-    
-    
+      footer address {
+        margin: 0;
+        font-style: normal;
+      }
+      
+      footer a {
+        color: #fff;
+        text-decoration: none;
+        
+      }.column {
+        float: left;
+        width: 50%;
+        padding: 10px;
+        height: 300px; 
+      }
