@@ -481,6 +481,7 @@ nav a.active{
 
     } .education p{
         font-size: 15px;
+
     } .education h3{
         font-size: 30px;
         text-align:left;
@@ -493,31 +494,69 @@ nav a.active{
         margin-top: 25px;
         background-color: #f5f5eb;
         border: 100px;
+        padding: 10px 0;
 
-    }
-    .projects a {
-        color: #333; /* Text color */
-        background-color: #f4f4f4; /* Light background color */
-        padding: 0.5rem 1.5rem;
-        border-radius: 25px; /* Rounded button style */
-        text-decoration: none;
-        font-weight: bold;
-        font-family: 'Arial', sans-serif;
-        transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
-      }
-      
-      .projects a:hover {
-        background-color: #a0a0a0; /* Darker background on hover */
-        color: #fff; /* White text on hover */
-        transform: scale(1.1); /* Slight zoom on hover */
-
-      }.projects h4{
+        
+    }.projtitle h4{
         font-size: 30px;
         text-align:left;
         text-decoration: underline;
         padding-top: 50px ;
         padding-right: 50px;
+        margin: 25px;
+        padding: 100px;
+    }
+
+    
+    .project a {
+        color: #333; 
+        background-color: #efe7da; 
+        padding: 0.5rem 1.5rem;
+        border-radius: 25px; 
+        text-decoration: none;
+        font-weight: bold;
+        font-family: 'Arial', sans-serif;
+        transition: background-color 0.3s ease, transform 0.3s ease; 
       }
+      
+      .project a:hover {
+        background-color: #8b5843; 
+        color: #fff; 
+        transform: scale(1.1); 
+   
+
+      }.project ul li a{
+        text-decoration: none;
+        margin: 20px 0 0 40px;
+        width: 30%;
+        border: 3px;
+        padding: 5px;
+        font-size: 50px;
+        gap:initial;
+
+        }
+        .project ul li{
+            display:inline;
+            list-style: none;
+            margin: 10px 0px 0 90px;
+            padding-left: 10px;
+            
+        }
+        
+        .project ul a{
+            text-decoration: none;
+           font-size: 1.8rem;
+           color: #3d1e0f;
+           margin-left: 4rem;
+           font-weight: 500;
+           transition: 0.3s ease;
+           border-bottom: 3px solid transparent;
+           
+           
+        } 
+        
+
+      
       footer {
         background-color: #987554;
         color: #fff;
@@ -540,3 +579,154 @@ nav a.active{
         padding: 10px;
         height: 300px; 
       }
+
+      .containerforcontacts{
+        margin-bottom: 3%;
+        max-width: 75%;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        background-color: #efe7da;
+        border-radius: 8px;
+        margin-left: auto;
+        margin-right: auto;
+        border-style:none;
+      
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      
+        border: 1;
+        border-style: none;
+        
+      }
+      
+      
+      
+      
+      .contactme {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px;
+      
+        
+      }
+      
+      .containerforlikes{
+        margin-left: auto;
+        margin-bottom: 3%;
+        max-width: 75%;
+        height: 30%;
+        padding: 20px;
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+        background-color: transparent;
+        border-radius: 8px;
+        margin-right: auto;
+        background-image: url(https://JohnEstano.github.io/resources/1.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+      
+        display: flex;
+        justify-content: center;
+      
+        box-shadow: rgba(5, 3, 3, 0.24) 0px 3px 8px;
+        
+        
+      }
+      
+      #likes{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px;
+        
+       
+      }
+      
+      #likes h1{
+        color: white;
+      }
+
+      #contactme h1{
+        color: #000;
+        margin-top: 20px;
+        font-size: 2.0em;
+        display: flex;
+       
+      
+        justify-content: center;
+      
+      }
+      
+      #contactme p {
+        font-weight: bold;
+        display: flex;
+        justify-content: center;
+      }
+      
+      
+      form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 700px; 
+        width: 100%;
+        padding: 20px;
+        background-color: transparent;
+      }
+      
+      .form-group {
+        width: 100%;
+        margin-bottom: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      
+      .form-group:last-child {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      input[type="text"],
+      input[type="email"],
+      input[type="password"],
+      textarea {
+        width: 100%;
+        padding: 10px;
+        margin-top: 5px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+        font-size: 16px;
+        
+      }
+      
+      textarea{
+        resize: vertical;
+      }
+      
+      .last {
+        display: flex;
+        border: 1px solid black;
+      }
+
+      .left-column, .right-column {
+        flex-basis: 50%;
+      }.last{
+        background-color: #efe7da;
+      }
+
+      .contactme{
+        font-size: 20px;
+        font-weight: bold;
+        margin: 0px;
+      }.right-column h2{
+        padding-top: 20px;
+        font-size: 20px;
+      }.right-column p{
+        font-size: 20px;
+      }iframe{
+        margin-top: 10px;
+      }
+      
+      
