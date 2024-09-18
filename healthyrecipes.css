@@ -1,0 +1,68 @@
+
+.navbar {
+    display: flex;
+    background-color: transparent;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+
+  }
+  
+  .button {
+    
+    background-color: #A31E0F;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    margin-left: 80%;
+  }
+
+  .button1 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #008CBA;
+  }
+  
+  .button1:hover {
+    background-color: #008CBA;
+    color: white;
+  }
+  
+
+  img {
+    height: 150px;
+  }
+  
+  .description {
+    font-size: 20px;
+  }
+  
+  #cook-time {
+    font-weight: bold;
+  }
+  
+  .ingredients li {
+    list-style: square;
+  }
+  
+  p.time {
+    color: gray;
+  }
+  
+  .external-link {
+    color: seagreen;
+  }
+  
+  h1, h2, p, li {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
