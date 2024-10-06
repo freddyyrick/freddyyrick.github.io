@@ -1,6 +1,30 @@
 body{
     background-color: pink;
-}
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  img{
+    height: 500px;
+    width: 500px;
+  }
+  h3{
+    color: rgb(0, 0, 0);
+  }
+  a {
+    color: #000000;
+    padding-top: 20px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+  }
+  
+  a:hover {
+    color: #000;
+    text-decoration: underline;
+  }
+
 
 /*------------------------------------------
   Responsive Grid Media Queries - 1280, 1024, 768, 480
