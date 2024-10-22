@@ -20,27 +20,27 @@ body{
     color: #3d1e0f; 
 
 }
-header{
-    margin-top: 20px;
+.header{
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    padding: 1rem 9%;
-    background-color: transparent;
-    filter: drop-shadow();
+    padding: 10px 10%;
+    background: #987554;
+    backdrop-filter: blur(200px);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 100;
+    z-index: 10;
 
 }
 .logo{
-    font-size: 3rem;
+    font-size: 40px;
     color: #3d1e0f;
     font-weight: 800;
     cursor: pointer;
     transition: 0.5s ease;
+    margin: 10px 10px 20px 20px;
 
 }
 .logo :hover{
@@ -63,7 +63,7 @@ nav ul li{
 }
 
 nav ul a{
-    text-decoration: none;
+   text-decoration: none;
    font-size: 1.8rem;
    color: #3d1e0f;
    margin-left: 1rem;
@@ -92,6 +92,7 @@ nav a.active{
       background-color: #efe7da;
       border-top: 0.1rem solid beige(0,0,0,1);
 
+    
     }
 
     nav.active{
@@ -108,6 +109,9 @@ nav a.active{
         padding: 1rem;
         border-radius: 0.5rem;
         border-bottom: 0.5rem;
+
+    }
+    .skill-text{
 
     }
 }
@@ -257,13 +261,21 @@ nav a.active{
         .home{
             gap: 4rem;
 
-        }
-    }
-        @media (max-width 990px){
-       .home{
         flex-direction: column;
         margin: 5rem 4rem;
             
+        }.projects{
+            margin : 5rem 4rem;
+            gap: 4rem;
+        }
+        .contacts{
+            font-size: 2.5rem;
+            width: 70vw;
+            margin-top: 4rem;
+
+        }.container{
+            width: 70vw;
+            margin-top: 4rem;
         }
 
         .home.home-content h3{
@@ -275,6 +287,11 @@ nav a.active{
         .home-img img{
             width: 70vw;
             margin-top:4rem;
+        }
+        .about-text h2{
+            font-size: 2.5rem;
+            width: 70vw;
+            margin-top: 4rem;
         }
     }
 
@@ -339,6 +356,10 @@ nav a.active{
         transform: scale3d(1.03);
         box-shadow: 0 0 25px;
     }
+   
+
+    
+
 
     .container{
     
@@ -428,6 +449,8 @@ nav a.active{
         background:local;
         background-color: #f5f5eb;
         border: 1000px;
+        width: 100%;
+        height: auto;
 
     }.third-container{
         position: relative;
@@ -454,10 +477,10 @@ nav a.active{
         margin-top:10px;
 
     }.education .card .imgBx{
-        position: center;
-        width: 220px;
-        height: 220px;
-        top: -10px;
+        position:center;
+        width: 200px;
+        height: 200px;
+        top: 5px;
         left: 10px;
         box-shadow: 0 5px 20px rgba(0, 0, 0, 1.2);
 
@@ -466,6 +489,7 @@ nav a.active{
     {
         max-width: 100%;
         border-radius: 10px;
+        padding: 10px;
 
     }
     .imgBx:hover img{
@@ -476,7 +500,7 @@ nav a.active{
         font-size: 20px;
         text-align:left;
         text-decoration:none;
-        padding-top: 50px ;
+        padding-top: 20px ;
         padding-right: 50px;
 
     } .education p{
@@ -486,7 +510,7 @@ nav a.active{
         font-size: 30px;
         text-align:left;
         text-decoration: underline;
-        padding-top: 50px ;
+        padding-top: 20px ;
         padding-right: 50px;
         
 
@@ -494,7 +518,8 @@ nav a.active{
         margin-top: 25px;
         background-color: #f5f5eb;
         border: 100px;
-        padding: 10px 0;
+        padding: 10px;
+        overflow: auto;
 
         
     }.projtitle h4{
@@ -517,6 +542,7 @@ nav a.active{
         font-weight: bold;
         font-family: 'Arial', sans-serif;
         transition: background-color 0.3s ease, transform 0.3s ease; 
+        
       }
       
       .project a:hover {
@@ -533,6 +559,7 @@ nav a.active{
         padding: 5px;
         font-size: 50px;
         gap:initial;
+        margin: 25px 10px 10px 25px;
 
         }
         .project ul li{
@@ -570,6 +597,7 @@ nav a.active{
         flex-basis: 50%;
       }.contacts{
         background-color: #efe7da;
+        margin-top: 4rem;
       }
 
       .contactme{
@@ -584,5 +612,47 @@ nav a.active{
       }iframe{
         margin-top: 10px;
       }
+
+
+
+      .const{
+        display: flex;
+        flex-direction: row;
+      }
+
+      .const-int{
+        display: flex;
+        gap: 4px;
+        justify-content: flex-end;
+        margin-bottom: 5px;
+      }
+
+     .divide{
+        flex: 1;
+        
+      }
+
       
-      
+      @media screen and(min-width:480px){
+        .about-text h2{
+            margin-left:216px;
+        }
+      }      
+
+      @media screen  and (min-width:480px){
+        #AboutMe{width: 200px;}
+        #about-text {margin-left: 216px;}
+
+    }@media screen  and (min-width:480px){
+
+        .container{
+            margin-left: 216px;
+            
+            
+    
+        }
+
+    }
+
+        
+ 
