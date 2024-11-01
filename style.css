@@ -649,10 +649,9 @@ nav a.active{
             margin-left: 216px;
             
         }
-
     }
 
-/* Improved Responsiveness */
+
 @media (max-width: 768px) {
     .main {
         flex-direction: column;
@@ -680,9 +679,7 @@ body {
     line-height: 1.6;
     font-size: 16px;
 }
-
-/* Accessibility Enhancements */
-a, button {
+ {
     outline: 2px solid transparent;
     outline-offset: 2px;
 }
