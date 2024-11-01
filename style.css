@@ -648,11 +648,50 @@ nav a.active{
         .container{
             margin-left: 216px;
             
-            
-    
         }
 
     }
+
+/* Improved Responsiveness */
+@media (max-width: 768px) {
+    .main {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .about img, .about-text {
+        width: 100%;
+        margin: 10px 0;
+    }
+    
+    .container, .dance {
+        margin: 20px auto;
+        width: 90%;
+    }
+}
+
+/* Smooth Transitions */
+* {
+    transition: all 0.3s ease;
+}
+
+/* Improved Typography */
+body {
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+/* Accessibility Enhancements */
+a, button {
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+}
+
+a:focus, button:focus {
+    outline-color: #8b5843;
+}
+
+ 
 
         
  
