@@ -726,7 +726,7 @@ a:focus, button:focus {
         }
         .projects .project ul {
             display: flex;
-            flex-wrap: wrap; /* Allow buttons to wrap */
+            flex-wrap: wrap; 
             justify-content: center;
             gap: 1rem; /* Space between buttons */
             padding: 2rem;
@@ -735,7 +735,7 @@ a:focus, button:focus {
         }
         
         .projects .project ul li {
-            flex: 1 1 calc(33.333% - 1rem); /* Three buttons per row */
+            flex: 1 1 calc(33.333% - 1rem); 
             max-width: calc(33.333% - 1rem);
             text-align: center;
             margin: 0 auto; /* Center buttons */
@@ -762,7 +762,7 @@ a:focus, button:focus {
         /* Projects Section: Tablet View */
         @media (max-width: 768px) {
             .projects .project ul li {
-                flex: 1 1 calc(50% - 1rem); /* Two links per row */
+                flex: 1 1 calc(50% - 1rem); 
                 max-width: calc(50% - 1rem);
             }
         }
@@ -770,7 +770,7 @@ a:focus, button:focus {
         /* Projects Section: Mobile View */
         @media (max-width: 576px) {
             .projects .project ul li {
-                flex: 1 1 100%; /* One link per row */
+                flex: 1 1 100%; 
                 max-width: 100%;
             }
         }
@@ -785,10 +785,6 @@ a:focus, button:focus {
                 font-size: 2rem; 
             }
         }
-      
-      textarea{
-        resize: vertical;
-      }
       
       .contacts {
         display: flex;
@@ -806,32 +802,6 @@ a:focus, button:focus {
         font-size: 20px;
         font-weight: bold;
         margin: 0px;
-      }.right-column h2{
-        padding-top: 20px;
-        font-size: 20px;
-      }.right-column p{
-        font-size: 20px;
-      }iframe{
-        margin-top: 10px;
-      }
-
-
-
-      .const{
-        display: flex;
-        flex-direction: row;
-      }
-
-      .const-int{
-        display: flex;
-        gap: 4px;
-        justify-content: flex-end;
-        margin-bottom: 5px;
-      }
-
-     .divide{
-        flex: 1;
-        
       }
 
       
@@ -917,7 +887,7 @@ a:focus, button:focus {
 }
 
 body {
-    background-color: #3d1e0f; /* Light Background */
+    background-color: #3d1e0f; 
     color: #3d1e0f;           
 }
 
@@ -977,7 +947,7 @@ body.dark-mode div {
 }
 body.dark-mode .tskills {
     background-color: #2b2b2b; /* Dark background */
-    color: #e0e0e0;           /* Light text */
+    color: #e0e0e0;           /* White text */
 }
 
 body.dark-mode .container img {
