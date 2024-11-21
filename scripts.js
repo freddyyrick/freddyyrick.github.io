@@ -25,47 +25,36 @@ if (localStorage.getItem('darkMode') === 'enabled') {
 
 
 
-const express = require('express');
-const nodemailer = require('nodemailer');
-const bodyParser = require('body-parser');
-const app = express();
-const PORT = 3000;
+document.querySelector('.footer-form').addEventListener('submit', async (event) => {
+    event.preventDefault(); // Prevent the default form submission
 
-// Middleware
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: true }));
+    // Get form data
+    const formData = new FormData(event.target);
 
-// Nodemailer configuration
-const transporter = nodemailer.createTransport({
-    service: 'gmail', // Use your email service (e.g., Gmail, Outlook)
-    auth: {
-        user: 'your-email@gmail.com', // Replace with your email
-        pass: 'your-email-password'   // Replace with your email password or app-specific password
-    }
-});
+    // Show loading feedback
+    const submitButton = event.target.querySelector('button[type="submit"]');
+    submitButton.textContent = 'Sending...';
+    submitButton.disabled = true;
 
-// Route to handle form submission
-app.post('/send-message', (req, res) => {
-    const { name, email, message } = req.body;
+    try {
+        // Send data to Formspree
+        const response = await fetch('https://formspree.io/f/meoqzvgz', {
+            method: 'POST',
+            body: formData,
+        });
 
-    const mailOptions = {
-        from: email,
-        to: 'your-email@gmail.com', // Replace with your email
-        subject: `Message from ${name}`,
-        text: message
-    };
-
-    transporter.sendMail(mailOptions, (error, info) => {
-        if (error) {
-            console.error(error);
-            res.status(500).send('Something went wrong.');
+        if (response.ok) {
+            alert('Message sent successfully!');
+            event.target.reset(); // Clear the form
         } else {
-            console.log('Email sent: ' + info.response);
-            res.status(200).send('Message sent successfully!');
+            alert('Failed to send the message. Please try again later.');
         }
-    });
-});
-
-app.listen(PORT, () => {
-    console.log(`Server running on http://localhost:${PORT}`);
+    } catch (error) {
+        console.error('Error:', error);
+        alert('An error occurred while sending the message.');
+    } finally {
+        // Restore button state
+        submitButton.textContent = 'Send';
+        submitButton.disabled = false;
+    }
 });
